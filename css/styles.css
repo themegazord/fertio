@@ -1,5 +1,6 @@
 :root {
   --primary-blue: #092E58;
+  --primary-footer-blue: #113C6B;
   --primary-white: #FFFFFF;
   --secundary-green: #CFFD00;
   --secundary-very-green: #019A34;
@@ -44,7 +45,7 @@ nav {
 
 #nav-links {
   display: flex;
-  gap: 30px;
+  gap: 60px;
   margin-right: 100px;
 }
 
@@ -191,4 +192,123 @@ main {
   line-height: 18px;
   text-align: center;
   color: #818A91;
+}
+
+/* Footer */
+
+footer {
+  width: 100%;
+  height: 15vh;
+  position: fixed;
+  bottom: 0;
+  display: grid;
+  grid-template-rows: 85% 15%;
+}
+
+#main-footer {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  background: var(--primary-blue);
+  border-radius: 20px 20px 0 0;
+}
+
+#info-main-footer {
+  display: grid;
+  grid-template-columns: 60% 40%;
+}
+
+.contact-area,
+.curitiba,
+.phone-number,
+.petrolina {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+
+.curitiba,
+.petrolina {
+  gap: 5px;
+}
+
+.contact-area>span {
+  color: var(--secundary-green);
+  font-family: var(--font-family-baloo);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+}
+
+.curitiba>span,
+.petrolina>span,
+.phone-number {
+  font-family: var(--font-family-baloo);
+  color: var(--primary-white);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+}
+
+.phone-numbers {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 70%;
+  height: 45%;
+}
+
+.social-media {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.social-media>span {
+  font-family: var(--font-family-baloo);
+  color: var(--secundary-green);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-size: 26px;
+
+}
+
+.social>a {
+  text-decoration: none;
+  color: var(--primary-white);
+}
+
+.sub-footer {
+  background: var(--primary-footer-blue);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px;
+}
+
+.sub-footer > span {
+  font-family: var(--font-family-baloo);
+  color: var(--primary-white);
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 22px;
+  letter-spacing: 0.5px;
 }
