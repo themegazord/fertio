@@ -1,0 +1,76 @@
+:root {
+  --primary-blue: #092E58;
+  --primary-footer-blue: #113C6B;
+  --primary-white: #FFFFFF;
+  --secundary-green: #CFFD00;
+  --secundary-very-green: #019A34;
+
+  --font-family-baloo: Baloo;
+  --font-family-roboto: Roboto;
+  --font-family-mulish: Mulish;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url('../../img/about_background.png');
+  background-color: #cccccc;
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 45% 55%;
+  height: 80vh;
+}
+
+#main-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.top-main-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.top-main-content span {
+  font-family: var(--font-family-mulish);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: var(--secundary-very-green);
+}
+
+.info-top-main-content,
+.info-bottom-main-content {
+  text-align: center;
+  font-family: var(--font-family-mulish);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: #000;
+  padding-top: 20px;
+  width: 75%;
+}
+
+.info2 {
+  padding-top: 15px;
+}
