@@ -203,6 +203,7 @@ footer {
   bottom: 0;
   display: grid;
   grid-template-rows: 85% 15%;
+  display: none;
 }
 
 #main-footer {
@@ -304,7 +305,7 @@ footer {
   padding: 0 50px;
 }
 
-.sub-footer > span {
+.sub-footer>span {
   font-family: var(--font-family-baloo);
   color: var(--primary-white);
   font-style: normal;
@@ -321,11 +322,11 @@ footer {
     gap: 50px;
     margin-right: 70px;
   }
-  
+
   #main-footer {
     grid-template-columns: 25% 25% 50%;
   }
-  
+
   .phone-numbers {
     gap: 5px;
     width: 70%;
@@ -401,5 +402,49 @@ footer {
 @media screen and (max-height: 800px) {
   #form {
     height: 450px;
+  }
+}
+
+
+@media screen and (max-height: 750px) {
+  #form {
+    height: 440px;
+    width: 390px;
+  }
+
+  .form {
+    margin-top: 40px;
+  }
+}
+
+@media screen and (max-height: 675px) {
+  .form {
+    margin-top: 30px;
+  }
+
+  #form {
+    height: 420px;
+  }
+
+  .curitiba>span,
+  .petrolina>span,
+  .phone-number {
+    font-size: 12px;
+  }
+
+  .contact-area {
+    justify-content: initial;
+    gap: 5px;
+    margin-top: 5px;
+  }
+}
+
+@media screen and (max-height: 590px) {
+  .form {
+    margin-top: 20px;
+  }
+
+  #form {
+    height: 400px;
   }
 }
